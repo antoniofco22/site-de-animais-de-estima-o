@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@1&display=swap');
+h1{
+    font-family: 'Chau Philomene One', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, 'Courier New', Courier, monospace, sans-serif;
+}
+nav{
+    
+    position: fixed;
+    padding: 1rem 0 1rem 0;
+    background: #a36969;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo{
+    display: inline-block;
+    padding: 0rem 22px 0rem 0.25rem;
+    
+}
+
+#logo svg{
+    max-width: 2.5vw;
+    max-height: 2.5vw;
+}
+nav svg:hover{
+    fill: #ff0000;
+}
+
+a{
+   
+}
+
+
+nav a{
+    
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #ffffff;    
+}
+body > nav > a:nth-child(2){
+    margin-left: 36rem;
+}
+body > nav > a:nth-child(5){
+    border: solid 0.5rem #ff0000;
+    background: #ff0000;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5b57e;
+}
+header,article{
+    width: 92vw;
+}
+
+footer{
+    background: #39e28d;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0 1rem 0 ;
+}
+
+
+
+
+
+
+   
+
+
+
+@media only screen and (max-width: 767px){
+        
+    #nav{
+        width: 40%;
+
+    }
+    #nav ul{
+    padding: 5rem 0px 0px 2rem;}
+    #nav a{
+    font-size: 2.0rem;}
+    #products  a:nth-child(3)  img{
+        padding: 1.188rem 0 0px 0;
+       
+    }
+}
