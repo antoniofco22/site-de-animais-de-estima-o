@@ -33,11 +33,6 @@ nav svg:hover{
     fill: #ff0000;
 }
 
-a{
-   
-}
-
-
 nav a{
     
     font-size: 1.4rem;
@@ -52,55 +47,216 @@ body > nav > a:nth-child(5){
     background: #ff0000;
     border-radius: 1rem;
 }
+img{
+    border-radius: 22rem;
+    margin: 3rem;
+    max-width: 500px;
+    background: #ff6b6b;
+}
+#title a{
+    
+    text-decoration: none;
+    color: #000000;    
+    border: solid 0.5rem #ff0000;
+    background: #ff0000;
+    border-radius: 1rem;
+}
 
 
+
+h1{
+    width: 50%;
+    font-size: 10rem;
+        max-width: 400px;
+     
+    
+}
+img{
+    width: 70%;
+    display: inline-block;
+    max-width: 400px;
+}
+h1, img{
+    margin-top: 6rem;
+}
+h4{
+    font-size: 2rem;
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+h2{
+    padding-top: 10vh;
+    font-size: 4.875rem;
+}
+#sobre P{  margin-bottom: 2rem;
+    margin-top: 2rem;
+    max-width: 25rem;
+    text-align: justify;
+}
+section a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000000;    
+    border: solid 0.5rem #ff0000;
+    background: #ff0000;
+    
+}
+.final, .review{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.services{
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        text-align: center;
+    }
+    
+
+.h5services{
+    font-size: 2.875rem;
+}
+.pservices{
+    text-align: justify;
+       margin: 17%;
+       height: 18vh;
+
+}
+.h6services{
+    font-size: 1.875rem;
+    margin-top: 10vh;
+
+}
+h6{
+    font-size: 1.2rem;
+
+}
+
+#contat{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    text-align: center;
+   
+    margin: auto;
+}
+footer{
+    text-align: center;
+    background: #7986be;
+    background-image: url(imagens/footer-1.png) ;
+    background-size: 18.75rem;
+    background-repeat: no-repeat, repeat;
+    background-position:0px 42vh;
+
+}
 
 
 
 
 
 section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    
+    display: grid;
     justify-content: center;
     align-items: center;
     background-color: #f5b57e;
-}
-header,article{
-    width: 92vw;
-}
-
-footer{
-    background: #39e28d;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1rem 0 1rem 0 ;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    padding: 0 10% 0 10%;
 }
 
+body > nav > a:nth-child(5):before{
+    content: "LIGUE";}
+
+    input::placeholder {
+        color: #000000;
+      }
+    #textarea::placeholder{
+        color: #000000;
+    }
+    #forms{
+        width: 70%;
+    margin: auto;
+    margin-top: 1vh;
+    }
+    #padrao{max-width: 100%;
+        min-width: 100%;
+        border-width: 0;
+        background: #7986be;
+        border-bottom: solid 1px #000000;
+        padding-top: 0.75em;
+        color: #000000;
+    }
+    #textarea{max-width: 100%;
+        min-width: 100%;
+        border-width: 0;
+        background: #7986be;
+        border-bottom: solid 1px #000000;
+        padding-top: 0.75em;
+        height: 10vh;
+        
+    }
+    #submit{ background: #7986be;
+        border-width: 0;
+        padding-top: 0.75em;
+        padding-bottom: 15vh;
+
+    }
 
 
 
 
 
-   
+
 
 
 
 @media only screen and (max-width: 767px){
         
-    #nav{
-        width: 40%;
+    body > nav > a:nth-child(2){
+        margin-left: 0rem;}
 
+    #contat{
+        grid-template-columns: repeat(1, 1fr);}
+
+    .services{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
-    #nav ul{
-    padding: 5rem 0px 0px 2rem;}
-    #nav a{
-    font-size: 2.0rem;}
-    #products  a:nth-child(3)  img{
-        padding: 1.188rem 0 0px 0;
+    section{
+        flex-direction: column;
        
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    padding: 0 10% 0 10%;
     }
+    h1{
+        font-size: 7rem;
+    }
+    h4{
+        margin-top: 0.5vh;
+        font-size: 1.4rem;
+    }
+    h2{
+        
+        font-size: 3rem;
+    }
+    .pservices{
+        margin: 15%;
+    }
+    .review h2{
+        margin-top: 20vh;
+    }
+    
+    #forms{
+        width: 100%;
+    }
+    footer{
+        background-position: 0px 72vh;
+    background-size: 9.75rem;
+    }
+
 }
